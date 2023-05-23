@@ -2,7 +2,7 @@ Look at the example of init code in today's notes <br> Refer this gist: https://
 
 ## Q1. When we do the CODECOPY operation, what are we overwriting ?
 
-A. Based on the provided opcode, "CODECOPY" operation doesn't actually copy anything to the memory because the last paramater for the "CODECOPY" is the number of bytes to copy, but in this case, the total number of bytes specified are 0. So, no data is being overrided in the memory.
+> Based on the provided opcode, "CODECOPY" operation doesn't actually copy anything to the memory because the last paramater for the "CODECOPY" is the number of bytes to copy, but in this case, the total number of bytes specified are 0. So, no data is being overrided in the memory.
 
 <hr />
 
@@ -22,7 +22,7 @@ CODECOPY
 
 ## Q3. Can you trigger a revert in the init code in Remix ?
 
-A. Yes. init code execution can be reverted just like a normal transaction execution. It can be reverted using "revert" keyword in Solidity.
+> Yes. init code execution can be reverted just like a normal transaction execution. It can be reverted using "revert" keyword in Solidity.
 In the context of the EVM bytecode, if the code encounters an INVALID opcode or runs out of gas during execution of the init code, it will also cause the transaction to revert.
 An example can be sending ETH in the deploy transaction.
 
@@ -71,4 +71,4 @@ A. EXTCODECOPY can be used for contract verification. When we want to verify if 
 
 ## Q6. Complete the assembly exercises in this repo: https://github.com/ExtropyIO/ExpertSolidityBootcamp
 
-A. Answers are pushed to my cloned repo: [CommitLink](https://github.com/dheeraj07/ExpertSolidityBootcamp/commit/3a1547d289c6fd7e3f5179519b61247f2c30fe00)
+> Answers are pushed to my cloned repo: [CommitLink](https://github.com/dheeraj07/ExpertSolidityBootcamp/commit/3a1547d289c6fd7e3f5179519b61247f2c30fe00)
